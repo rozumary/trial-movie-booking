@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MOVIE-TICKET-BOOKING-SYSTEM.jnlp">
+  <information>
+    <title>MOVIE-TICKET-BOOKING-SYSTEM</title>
+    <vendor>ASUS</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MOVIE-TICKET-BOOKING-SYSTEM.jar" size="429159" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.48.jar" size="1006956" download="eager" />
+    <jar href="lib\ojdbc8.jar" size="7084287" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MOVIE-TICKET-BOOKING-SYSTEM" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="movie.ticket.booking.system.MOVIETICKETBOOKINGSYSTEM"  name="MOVIE-TICKET-BOOKING-SYSTEM" />
+  <update check="always"/>
+</jnlp>

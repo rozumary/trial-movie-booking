@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="609.0" prefWidth="959.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.ticket.booking.system.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane fx:id="signIn_form" layoutX="283.0" layoutY="98.0" prefHeight="609.0" prefWidth="959.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="66.0" layoutY="315.0" prefHeight="52.0" prefWidth="324.0" styleClass="label-custom" stylesheets="@../../../../../../MovieTicketBookingSystemJava/src/main/resources/com/mycompany/movieticketbookingsystemjava/designLoginForm.css" text="Movie Ticket Booking System">
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="620.0" prefWidth="431.0" styleClass="linear-grad" stylesheets="@login.css">
+               <children>
+                  <ImageView fitHeight="292.0" fitWidth="269.0" layoutX="67.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/download.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="143.0" layoutY="115.0" prefHeight="53.0" prefWidth="156.0" text="Mooby" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="61.0" layoutY="371.0" text="Movie Ticket Booking System" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="408.0" text="Book your ticket now and enjoy the magic of cinema!" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="119.0" layoutY="515.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="169.0" styleClass="button-login-2" stylesheets="@login.css" text="Book Now" />
+               </children>
+            </Pane>
+            <Pane layoutX="430.0" prefHeight="620.0" prefWidth="556.0" styleClass="linear-grad-pane" stylesheets="@login.css">
+               <children>
+                  <Button fx:id="signIn_close" layoutX="503.0" layoutY="7.0" mnemonicParsing="false" onAction="#signIn_close" prefHeight="25.0" prefWidth="37.0" styleClass="close" stylesheets="@login.css">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" size="16" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="signIn_minimize" layoutX="459.0" layoutY="7.0" mnemonicParsing="false" onAction="#signIn_minimize" prefHeight="25.0" prefWidth="37.0" styleClass="close" stylesheets="@login.css">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="MINUS" size="16" />
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="187.0" fitWidth="203.0" layoutX="183.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/user.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="signIn_username" layoutX="109.0" layoutY="312.0" prefHeight="48.0" prefWidth="324.0" promptText="Username" styleClass="text-field-custom" stylesheets="@login.css" />
+                  <Label layoutX="229.0" layoutY="248.0" prefHeight="35.0" prefWidth="92.0" text="Sign In">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="signIn_password" layoutX="109.0" layoutY="385.0" prefHeight="48.0" prefWidth="324.0" promptText="Password" styleClass="password-field-custom" stylesheets="@login.css" />
+                  <Button fx:id="signIn_loginBtn" layoutX="179.0" layoutY="478.0" mnemonicParsing="false" onAction="#signIn" prefHeight="36.0" prefWidth="199.0" styleClass="button-login" stylesheets="@login.css" text="Sign In" />
+                  <Hyperlink fx:id="signIn_createAccount" layoutX="174.0" layoutY="542.0" onAction="#switchForm" styleClass="hyperlink-custom" stylesheets="@login.css" text="Don't have an account? Sign Up" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signUp_form" layoutX="10.0" prefHeight="619.0" prefWidth="929.0" visible="false">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="66.0" layoutY="315.0" prefHeight="52.0" prefWidth="324.0" styleClass="label-custom" stylesheets="@../../../../../../MovieTicketBookingSystemJava/src/main/resources/com/mycompany/movieticketbookingsystemjava/designLoginForm.css" text="Movie Ticket Booking System">
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font>
+            </Label>
+            <Pane layoutX="-11.0" prefHeight="620.0" prefWidth="431.0" styleClass="linear-grad" stylesheets="@login.css">
+               <children>
+                  <ImageView fitHeight="292.0" fitWidth="269.0" layoutX="68.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/download.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="144.0" layoutY="115.0" prefHeight="53.0" prefWidth="156.0" text="Mooby" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="371.0" text="Movie Ticket Booking System" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="408.0" text="Book your ticket now and enjoy the magic of cinema!" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="120.0" layoutY="515.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="169.0" styleClass="button-login-2" stylesheets="@login.css" text="Book Now" />
+               </children>
+            </Pane>
+            <Pane layoutX="420.0" prefHeight="620.0" prefWidth="556.0" styleClass="linear-grad-pane" stylesheets="@login.css">
+               <children>
+                  <Button fx:id="signUp_close" layoutX="503.0" layoutY="7.0" mnemonicParsing="false" onAction="#signUp_close" prefHeight="25.0" prefWidth="37.0" styleClass="close" stylesheets="@login.css">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" size="16" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="signUp_minimize" layoutX="459.0" layoutY="7.0" mnemonicParsing="false" onAction="#signUp_minimize" prefHeight="25.0" prefWidth="37.0" styleClass="close" stylesheets="@login.css">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="MINUS" size="16" />
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="187.0" fitWidth="203.0" layoutX="181.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/user.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="signUp_email" layoutX="116.0" layoutY="297.0" prefHeight="40.0" prefWidth="313.0" promptText="Email Address" styleClass="text-field-custom" stylesheets="@login.css" />
+                  <Label layoutX="229.0" layoutY="244.0" prefHeight="36.0" prefWidth="99.0" text="Sign Up">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="signUp_password" layoutX="116.0" layoutY="412.0" prefHeight="40.0" prefWidth="313.0" promptText="Password" styleClass="password-field-custom" stylesheets="@login.css" />
+                  <Button fx:id="signUp_btn" layoutX="179.0" layoutY="478.0" mnemonicParsing="false" onAction="#signUp" prefHeight="36.0" prefWidth="199.0" styleClass="button-login" stylesheets="@login.css" text="Sign Up" />
+                  <Hyperlink fx:id="signUp_alreadyHaveAccount" layoutX="166.0" layoutY="551.0" onAction="#switchForm" styleClass="hyperlink-custom" stylesheets="@login.css" text="Already have an account? Sign In" />
+                  <TextField fx:id="signUp_username" layoutX="116.0" layoutY="355.0" prefHeight="40.0" prefWidth="313.0" promptText="Username" styleClass="text-field-custom" stylesheets="@login.css" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
